@@ -1,0 +1,150 @@
+.home-1{
+  height: 94vh;
+  min-height: 90vh;
+  width: 18rem;
+  min-width: 16rem;
+    position: relative;
+    background: rgba(123, 135, 143, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .home-1 h1{
+    font-weight: 600;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(239, 237, 239);
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 7vh;
+    margin-bottom: 20px;
+  }
+  .home-1 h1 span{
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(36, 92, 247);
+    -webkit-text-fill-color: rgb(103, 220, 253);
+  }
+  label{
+    color: rgb(248, 204, 161);
+  }
+  input{
+    height: 36px;
+    width: 100%;
+    outline: none;
+    border: 1.5px solid var(--white);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 17px;
+    margin: 5px;
+    margin-bottom: 20px;
+    transition: linear 0.2s all;
+  }
+  input:hover{
+    border-color: var(--green);
+  }
+  .go{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    --color: #96def4;
+    --color2: rgb(10, 25, 30);
+    padding: 6px 12px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+
+   }
+   
+   button::after, button::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   button::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   button:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   button:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   button:hover {
+    color: var(--color2);
+   }
+   
+   button:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+  button i{
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--red);
+    transition: linear 0.2s all;
+  }
+  button:hover{
+    border-color: var(--white);
+    border-radius: 5px;
+  }
+  button:hover i{
+    color: var(--black);
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 34px;
+    font-size: 14px;
+    color: var(--grey);
+  }
+  footer span{
+    color: rgb(255, 208, 0);
+  }
+
+
+  @media (max-height: 500px) {
+    .home-1{
+      border-radius: 20px;
+      padding: 10px;
+      gap: 0.5rem;
+      min-width: 16.5rem;
+    }
+    input{
+      width: 98%;
+    }
+    footer{
+      margin-left: 44px;
+    }
+  }

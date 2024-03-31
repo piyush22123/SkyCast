@@ -1,0 +1,13 @@
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 96vh;
+  width: 100%;
+  background: url("public/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}

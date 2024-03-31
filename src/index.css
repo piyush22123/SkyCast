@@ -1,0 +1,23 @@
+:root {
+  --white: #fff;
+  --black: #111;
+  --darkpurple: #1E2136;
+  --litepurple: #462362;
+  --purple: #2F1448;
+  --grey: #afaeae;
+  --darkgrey: #535252be;
+  --green: #61c96f;
+  --red: #f94141;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(../public/font/Gilroy-Medium.woff);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy;
+  color: var(--white);
+}
+

@@ -1,0 +1,50 @@
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.details .part{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 15px;
+    padding: 4px;
+}
+.part .first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.first .icon1 i{
+    color: rgb(255, 196, 0);
+}
+.first .icon2 i{
+    color: rgb(160, 156, 156);
+}
+.first .icon3 i{
+    color: rgb(32, 163, 250);
+}
+.first .icon4 i{
+    color: rgb(255, 111, 0);
+}
+.first .icon5 i{
+    color: rgb(255, 38, 0);
+}
+.first .icon6 i{
+    color: rgb(22, 162, 255);
+}
+
+
+.first .data p{
+    color: var(--grey);
+    font-size: 14px;
+}
+.first .data h6{
+    font-size: 15px;
+    font-weight: 200;
+}
