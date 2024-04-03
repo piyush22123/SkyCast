@@ -1,6 +1,8 @@
 .container {
     height: 94vh;
-    width: 51vh;
+    min-height: 90vh;
+    width: 18rem;
+    min-width: 16rem;
     background: rgba(145, 166, 181, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(15px);
@@ -24,6 +26,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    gap: 0.8rem;
+}
+.container .body{
+    margin-top: 100px;
+    overflow: scroll;
 }
 
 .top .heading h1 {
@@ -51,3 +59,13 @@
 .image img{
     width: 80px;
 }
+
+
+@media (max-height: 550px) {
+    .container{
+      border-radius: 20px;
+      padding: 10px;
+      gap: 0.5rem;
+      min-width: 16.5rem;
+    }
+  }

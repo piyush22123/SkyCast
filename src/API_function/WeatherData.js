@@ -1,4 +1,8 @@
 import Enterdata from "../pages/Landingpage/Enterdata";
+import key from "../key";
+
+
+
 // Asynchronous function to fetch weather data based on user's current location
 const WeatherData = async (city, country) => {
     try {
@@ -12,7 +16,7 @@ const WeatherData = async (city, country) => {
         // const longitude = position.coords.longitude;
     
         // Fetch weather data using latitude and longitude from the OpenWeatherMap API
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=57f1f09d5913691473f418a4fe1e1220&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${key}&units=metric`);
         
         // Check if the response is successful (HTTP status code 200)
         if (!response.ok) {
@@ -21,7 +25,7 @@ const WeatherData = async (city, country) => {
         
         // Parse the JSON response
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         // Return the fetched weather data
         return data;
     } catch (error) {
