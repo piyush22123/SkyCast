@@ -80,7 +80,7 @@ const Home = () => {
 
       <div className="middle">
 
-        <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="Weather icon" />
+        <img src={`//openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="Weather icon" />
         <h1>{weather.main.temp} °C</h1>
         <h5>{weather.weather[0].main}</h5>
         <p>{days[now.getDay()] + " " + now.getDate() + " | " + now.getHours() + ":" + now.getMinutes()}</p>

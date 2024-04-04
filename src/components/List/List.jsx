@@ -40,7 +40,7 @@ const List = ({ index }) => {
   const formattedDate = date.toLocaleDateString('en-US', options);
 
   // Weather icon URL
-  const iconUrl = `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
+  const iconUrl = `//openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`;
 
   return (
     <div className='list'>

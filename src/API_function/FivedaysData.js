@@ -6,7 +6,7 @@ import key from "../key";
 const FivedaysData = async (city, country) => {
     try {
         // Fetch weather data using latitude and longitude from the OpenWeatherMap API
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=bhopal,india&appid=${key}&units=metric`);
+        const response = await fetch(`//api.openweathermap.org/data/2.5/forecast?q=bhopal,india&appid=${key}&units=metric`);
         
         // Check if the response is successful (HTTP status code 200)
         if (!response.ok) {
