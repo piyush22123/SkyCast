@@ -31,7 +31,7 @@ const WeatherData = async (city, country) => {
     } catch (error) {
         // Handle errors gracefully
         console.error("Error fetching weather data:", error);
-        throw new Error("Check your internet connectivity or Enter valid city");
+        throw new Error("Enter valid city or country name");
     }
 };
 

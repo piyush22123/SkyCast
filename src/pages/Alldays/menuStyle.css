@@ -32,6 +32,12 @@
 .container .body{
     margin-top: 100px;
     overflow: scroll;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+
+.container .body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .top .heading h1 {
